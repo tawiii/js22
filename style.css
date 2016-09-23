@@ -1,0 +1,45 @@
+*{
+	list-style-type: none;
+	text-decoration: none;
+}
+
+.wrap{
+	width: 960px;
+	margin: 0 auto;
+	background-color: yellowgreen;
+	padding-left: 20px;
+}
+.title{
+	text-align: center;
+}
+.shut{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: #eee;
+	background: rgba(0, 0 ,0, 0.5);
+}
+.install{
+	position: fixed;
+	top: 30%;
+	left: 40%;
+	padding: 100px;
+	background-color: #bbb;
+	z-index: 10000;
+}
+.close{
+	position: absolute;
+	left: 91%;
+    top: 1%;
+    cursor: pointer;
+}
+.but{
+	padding: 10px;
+	background-color: yellow;
+	margin-left: 30px;
+	margin-bottom: 20px;
+	cursor: pointer;
+}

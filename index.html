@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>js22</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	</head>
+<body>
+ <script type="text/template" id='test'>
+	 <div class="wrap">
+	 <form action="#">
+        <h1 class="title"><%= data.h %></h1>
+         <% for ( var i = 0; i < data.all.length; i++ ) { %>
+		<div class="wrapper">
+			<p><%= data.all[i].question %></p>
+	        <ul class="menu">
+	        <% for ( var j = 0; j < data.all[i].option.length; j++ ) { %>
+				<li><label class="lb"><input class="inpu" type="checkbox" name="number"><span><%= data.all[i].option[j].answer %></span></label></li>
+			<% } %>
+			</ul>
+		</div>
+    <% } %>   
+    <input  class="but" type="submit" value="<%= data.button %>">
+     </form>
+     <div class="success shut"><span class="install"><%= data.success %><span class="close">[X]</span></span></div>
+     <div class="sadness shut"><span class="install"><%= data.sadness %><span class="close">[X]</span></span></div>
+     </div>
+		</script>
+	<script src="js1.js"></script>
+	<script src="dist/js2.js"></script>
+	<script src="tmpl.js"></script>
+
+</body>
+</html>
