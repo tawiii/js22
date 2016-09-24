@@ -1,4 +1,4 @@
-var app = require('../js.js');
+var app = require('../js1.js');
 
 describe("app", function() {
     it("contains spec with an expectation", function() {
